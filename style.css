@@ -1,0 +1,69 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.mood-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+.calendar div {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: default;
+}
+
+.summary-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+canvas {
+  max-width: 100%;
+  margin-bottom: 20px;
+}

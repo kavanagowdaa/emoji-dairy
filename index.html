@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emoji-Based Digital Diary</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌈 Emoji Mood Diary</h1>
+
+    <div class="mood-entry">
+      <label for="emoji">How are you feeling?</label>
+      <select id="emoji">
+        <option>😄</option>
+        <option>😐</option>
+        <option>😢</option>
+        <option>😠</option>
+        <option>😴</option>
+        <option>😰</option>
+        <option>🥳</option>
+      </select>
+
+      <textarea id="note" placeholder="Optional note about your day..."></textarea>
+
+      <button id="saveBtn">Save Mood</button>
+    </div>
+
+    <div class="calendar" id="calendar"></div>
+
+    <div class="summary-section">
+      <h2>📊 Weekly Summary</h2>
+      <canvas id="moodChart"></canvas>
+      <p id="aiSummary">Your summary will appear here...</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
